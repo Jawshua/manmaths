@@ -1,0 +1,164 @@
+<span class="pull-right">
+	<a class="btn btn-info" ui-sref="calculator({id: vehicle.id, spec: vehicle.serialize()})"><i class="glyphicon glyphicon-share"></i></a>
+	<a class="btn btn-danger" ui-sref="calculator({id: vehicle.id, spec: ''})"><i class="glyphicon glyphicon-remove"></i></a>
+</span>
+<h1>{{vehicle.name}}</h1>
+<div class="row clearfix">
+    <div class="col-lg-8">
+    	<table class="table table-striped">
+    		<thead>
+    			<tr>
+    				<th>Option</th>
+    				<th>Price</th>
+    				<th>+GFV</th>
+    			</tr>
+    		</thead>
+    		<tbody>
+    			<tr ng-repeat="option in vehicle.options">
+    				<td>
+    					<input type="checkbox" ng-model="option.selected" /> {{option.name}}
+    				</td>
+    				<td>
+    					£{{option.price|number:2}}
+    				</td>
+    				<td>
+    					£{{option.gfv|number:2}}
+    				</td>
+    			</tr>
+    		</tbody>
+    	</table>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+                <form class="form-horizontal">
+                    <div class="form-group has-success">
+                        <label class="col-sm-4 control-label">
+                            Monthly Payment
+                        </label>
+                        <div class="col-sm-8 control-label">
+                            <strong>£{{vehicle.calculateMonthlyRate()|number:2}}</strong>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group">
+                        <label for="base" class="col-sm-4 control-label">
+                            Base Price
+                        </label>
+                        <div class="col-sm-8 control-label">
+                            £{{vehicle.price|number:2}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="extras" class="col-sm-4 control-label">
+                            Extras
+                        </label>
+                        <div class="col-sm-8 control-label">
+                            £{{vehicle.totalExtras()|number:2}}
+                        </div>
+                    </div>
+                    <div class="form-group" ng-class="{'has-error': vehicle.totalPrice() > 40000}">
+                        <label for="total" class="col-sm-4 control-label">
+                            Total
+                        </label>
+                        <div class="col-sm-8 control-label">
+                            £{{vehicle.totalPrice()|number:2}}
+                            <div class="help-block">
+                            	If this is higher than £40,000 then annual road tax increases to £450.
+                            </div>
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label for="otr" class="col-sm-4 control-label">
+                            OTR Costs
+                        </label>
+                        <div class="col-sm-8 control-label">
+                            £{{vehicle.totalOTR()|number:2}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="total" class="col-sm-4 control-label">
+                            Total Price OTR
+                        </label>
+                        <div class="col-sm-8 control-label">
+                            <strong>£{{vehicle.totalPrice()|number:2}}</strong>
+                            <div class="help-block">
+                                This is the total amount that you will pay the dealer for the car.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+					<div class="form-group">
+                        <label for="dealerDeposit" class="col-sm-4 control-label">
+                            Dealer Deposit
+                        </label>
+                        <div class="col-sm-8">
+                            <input id="dealerDeposit" class="form-control" ng-model="vehicle.dealerDeposit" type="number" />
+                            <div class="help-block">
+                                This is amount that your dealer is contributing towards the deposit.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="deposit" class="col-sm-4 control-label">
+                            Deposit
+                        </label>
+                        <div class="col-sm-8">
+                            <input id="deposit" class="form-control" ng-model="vehicle.deposit" type="number" />
+                            <div class="help-block">
+                                This is the amount that you are contributing towards the deposit.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">
+                            GFV
+                        </label>
+                        <div class="col-sm-8">
+                            £{{vehicle.totalGfv()|number:2}}
+                           	<div class="help-block">
+	                        	This is the optional final payment at the end of the finance term.
+	                        </div>
+                        </div>
+
+                    </div>
+					<div class="form-group">
+                        <label class="col-sm-4 control-label">
+                            Finance Term
+                        </label>
+                        <div class="col-sm-8">
+                            {{vehicle.term}} months
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-4 control-label">
+                            Milage Allowance
+                        </label>
+                        <div class="col-sm-8">
+                            8,000/year
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">
+                            Amount to Finance
+                        </label>
+                        <div class="col-sm-8 control-label">
+
+                            	£{{vehicle.totalPrice()|number:2}}<br />
+                            	-£{{vehicle.dealerDeposit|number:2}}<br />
+                            	-£{{vehicle.deposit|number:2}} <br />
+                            	-£{{vehicle.totalGfv()|number:2}}
+                            	<br />
+                            	= <strong>£{{vehicle.amountToFinance()|number:2}}</strong>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

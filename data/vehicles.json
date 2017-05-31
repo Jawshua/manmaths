@@ -1,0 +1,591 @@
+[
+    {
+        "id": "bmw-m140i",
+        "name": "BMW M140i",
+        "image": "/img/BMW-M140i-2018-600.jpg",
+
+        "price": 31570.00,
+        "deposit": 1700,
+        "dealerDeposit": 7400,
+        "apr": 3.9,
+        "term": 48,
+        "gfv": 12854,
+
+        "otr": 1580,
+        "options": [
+            {
+                "name": "Shadow Edition",
+                "selected": false,
+                "gfv": 680,
+                "price": 1335,
+                "otr": 0,
+                "id": "shadow"
+            },
+            {
+                "name": "Shadow Edition Front Parking Sensors",
+                "selected": false,
+                "gfv": 0,
+                "price": 250,
+                "otr": 0,
+                "id": "508s"
+            },
+
+            {
+                "name": "5-Door",
+                "selected": false,
+                "gfv": 351,
+                "price": 530,
+                "otr": 0,
+                "id": "5dr"
+            },
+
+            {
+                "name": "Sports Automatic",
+                "selected": false,
+                "gfv": 502,
+                "price": 1600,
+                "otr": -300,
+                "id": "2TB"
+            },
+
+            {
+                "name": "Metallic Paint",
+                "selected": false,
+                "gfv": 0,
+                "price": 550,
+                "otr": 0,
+                "id": "met"
+            },
+
+            {
+                "name": "Professional Media / Navigation Package",
+                "selected": false,
+                "gfv": 136,
+                "price": 775,
+                "otr": 0,
+                "id": "ZNP"
+            },
+
+            {
+                "name": "Adaptive M Sport suspension",
+                "selected": false,
+                "gfv": 0,
+                "price": 515,
+                "otr": 0,
+                "id": "2VF"
+            },
+
+            {
+                "name": "Adaptive Cruise (Auto Only)",
+                "selected": false,
+                "gfv": 0,
+                "price": 430,
+                "otr": 0,
+                "id": "5DF"
+            },
+
+            {
+                "name": "Adaptive LED Headlights",
+                "selected": false,
+                "gfv": 266,
+                "price": 495,
+                "otr": 0,
+                "id": "552"
+            },
+
+            {
+                "name": "Driving Assistant",
+                "selected": false,
+                "gfv": 0,
+                "price": 390,
+                "otr": 0,
+                "id": "5AS"
+            },
+
+            {
+                "name": "Headlight Wash",
+                "selected": false,
+                "gfv": 0,
+                "price": 195,
+                "otr": 0,
+                "id": "502"
+            },
+
+            {
+                "name": "High-beam Assistant",
+                "selected": false,
+                "gfv": 0,
+                "price": 110,
+                "otr": 0,
+                "id": "5AC"
+            },
+
+            {
+                "name": "Park Assist",
+                "selected": false,
+                "gfv": 0,
+                "price": 255,
+                "otr": 0,
+                "id": "5DP"
+            },
+
+            {
+                "name": "Park Distance Control (PDC), Front and Rear",
+                "selected": false,
+                "gfv": 136,
+                "price": 595,
+                "otr": 0,
+                "id": "508"
+            },
+
+            {
+                "name": "Park Distance Control (PDC), Rear",
+                "selected": false,
+                "gfv": 0,
+                "price": 360,
+                "otr": 0,
+                "id": "507"
+            },
+
+            {
+                "name": "Reverse Assist Camera",
+                "selected": false,
+                "gfv": 136,
+                "price": 330,
+                "otr": 0,
+                "id": "3AG"
+            },
+
+            {
+                "name": "Speed Limit Info",
+                "selected": false,
+                "gfv": 0,
+                "price": 200,
+                "otr": 0,
+                "id": "8TH"
+            },
+
+            {
+                "name": "Lumbar Support",
+                "selected": false,
+                "gfv": 0,
+                "price": 195,
+                "otr": 0,
+                "id": "488"
+            },
+
+            {
+                "name": "Electric Front Seats",
+                "selected": false,
+                "gfv": 0,
+                "price": 650,
+                "otr": 0,
+                "id": "459"
+            },
+
+            {
+                "name": "Heated front seats",
+                "selected": false,
+                "gfv": 136,
+                "price": 295,
+                "otr": 0,
+                "id": "494"
+            },
+
+            {
+                "name": "Comfort Access (Keyless Entry)",
+                "selected": false,
+                "gfv": 0,
+                "price": 350,
+                "otr": 0,
+                "id": "322"
+            },
+
+            {
+                "name": "Folding door mirrors with anti-dazzle",
+                "selected": false,
+                "gfv": 0,
+                "price": 145,
+                "otr": 0,
+                "id": "430"
+            },
+
+            {
+                "name": "Glass Sunroof",
+                "selected": false,
+                "gfv": 266,
+                "price": 895,
+                "otr": 0,
+                "id": "403"
+            },
+
+            {
+                "name": "Luggage compartment with separating net",
+                "selected": false,
+                "gfv": 0,
+                "price": 105,
+                "otr": 0,
+                "id": "413"
+            },
+
+            {
+                "name": "Smoker's Package",
+                "selected": false,
+                "gfv": 0,
+                "price": 25,
+                "otr": 0,
+                "id": "441"
+            },
+
+            {
+                "name": "Through-loading system",
+                "selected": false,
+                "gfv": 0,
+                "price": 175,
+                "otr": 0,
+                "id": "465"
+            },
+
+            {
+                "name": "Windscreen with grey shade band",
+                "selected": false,
+                "gfv": 0,
+                "price": 75,
+                "otr": 0,
+                "id": "3AP"
+            },
+
+            {
+                "name": "Steering wheel heating",
+                "selected": false,
+                "gfv": 0,
+                "price": 160,
+                "otr": 0,
+                "id": "248"
+            },
+
+            {
+                "name": "Apple CarPlay preparation",
+                "selected": false,
+                "gfv": 0,
+                "price": 235,
+                "otr": 0,
+                "id": "6CP"
+            },
+
+            {
+                "name": "Enhanced Bluetooth w/ USB audio and Voice Control",
+                "selected": false,
+                "gfv": 0,
+                "price": 430,
+                "otr": 0,
+                "id": "6NS"
+            },
+
+            {
+                "name": "Enhanced Bluetooth w/ wireless charging",
+                "selected": false,
+                "gfv": 0,
+                "price": 395,
+                "otr": 0,
+                "id": "6NW"
+            },
+
+            {
+                "name": "Loudspeaker - BMW Advanced",
+                "selected": false,
+                "gfv": 136,
+                "price": 295,
+                "otr": 0,
+                "id": "676"
+            },
+
+            {
+                "name": "Loudspeaker - Harman/Kardon",
+                "selected": false,
+                "gfv": 272,
+                "price": 600,
+                "otr": 0,
+                "id": "674"
+            }
+        ]
+    },
+    {
+        "id": "bmw-m240i",
+        "name": "BMW M240i Coupé",
+        "image": "/img/BMW-M240i_Coupe-2018-600.jpg",
+
+        "price": 34835.00,
+        "deposit": 3000,
+        "dealerDeposit": 7665,
+        "apr": 3.9,
+        "term": 48,
+        "gfv": 14788,
+
+        "otr": 1580,
+
+		"options": [
+            {
+                "name": "Sports Automatic",
+                "selected": false,
+                "gfv": 502,
+                "price": 1600,
+                "otr": -300,
+                "id": "2TB"
+            },
+
+            {
+                "name": "Metallic Paint",
+                "selected": false,
+                "gfv": 0,
+                "price": 550,
+                "otr": 0,
+                "id": "met"
+            },
+
+            {
+                "name": "Professional Media / Navigation Package",
+                "selected": false,
+                "gfv": 136,
+                "price": 775,
+                "otr": 0,
+                "id": "ZNP"
+            },
+
+            {
+                "name": "Adaptive M Sport suspension",
+                "selected": false,
+                "gfv": 0,
+                "price": 515,
+                "otr": 0,
+                "id": "2VF"
+            },
+
+            {
+                "name": "Adaptive Cruise (Auto Only)",
+                "selected": false,
+                "gfv": 0,
+                "price": 790,
+                "otr": 0,
+                "id": "5DF"
+            },
+
+            {
+                "name": "Adaptive LED Headlights",
+                "selected": false,
+                "gfv": 266,
+                "price": 795,
+                "otr": 0,
+                "id": "552"
+            },
+
+            {
+                "name": "Cruise control with braking function",
+                "selected": false,
+                "gfv": 266,
+                "price": 360,
+                "otr": 0,
+                "id": "544"
+            },
+
+            {
+                "name": "Driving Assistant",
+                "selected": false,
+                "gfv": 0,
+                "price": 390,
+                "otr": 0,
+                "id": "5AS"
+            },
+
+            {
+                "name": "Headlight Wash",
+                "selected": false,
+                "gfv": 0,
+                "price": 195,
+                "otr": 0,
+                "id": "502"
+            },
+
+            {
+                "name": "Park Assist",
+                "selected": false,
+                "gfv": 0,
+                "price": 255,
+                "otr": 0,
+                "id": "5DP"
+            },
+
+            {
+                "name": "Park Distance Control (PDC), Front and Rear",
+                "selected": false,
+                "gfv": 136,
+                "price": 250,
+                "otr": 0,
+                "id": "508"
+            },
+
+            {
+                "name": "Reverse Assist Camera",
+                "selected": false,
+                "gfv": 136,
+                "price": 330,
+                "otr": 0,
+                "id": "3AG"
+            },
+
+            {
+                "name": "Speed Limit Info",
+                "selected": false,
+                "gfv": 0,
+                "price": 200,
+                "otr": 0,
+                "id": "8TH"
+            },
+
+            {
+                "name": "Lumbar Support",
+                "selected": false,
+                "gfv": 0,
+                "price": 195,
+                "otr": 0,
+                "id": "488"
+            },
+
+            {
+                "name": "Electric Front Seats",
+                "selected": false,
+                "gfv": 0,
+                "price": 650,
+                "otr": 0,
+                "id": "459"
+            },
+
+            {
+                "name": "Heated front seats",
+                "selected": false,
+                "gfv": 136,
+                "price": 295,
+                "otr": 0,
+                "id": "494"
+            },
+
+            {
+                "name": "Comfort Access (Keyless Entry)",
+                "selected": false,
+                "gfv": 0,
+                "price": 350,
+                "otr": 0,
+                "id": "322"
+            },
+
+            {
+                "name": "Folding door mirrors with anti-dazzle",
+                "selected": false,
+                "gfv": 0,
+                "price": 275,
+                "otr": 0,
+                "id": "430"
+            },
+
+            {
+                "name": "Glass Sunroof",
+                "selected": false,
+                "gfv": 266,
+                "price": 895,
+                "otr": 0,
+                "id": "403"
+            },
+
+            {
+                "name": "Smoker's Package",
+                "selected": false,
+                "gfv": 0,
+                "price": 25,
+                "otr": 0,
+                "id": "441"
+            },
+
+            {
+                "name": "Through-loading system",
+                "selected": false,
+                "gfv": 0,
+                "price": 175,
+                "otr": 0,
+                "id": "465"
+            },
+
+            {
+                "name": "Sun protection glass",
+                "selected": false,
+                "gfv": 0,
+                "price": 290,
+                "otr": 0,
+                "id": "420"
+            },
+
+
+            {
+                "name": "Windscreen with grey shade band",
+                "selected": false,
+                "gfv": 0,
+                "price": 75,
+                "otr": 0,
+                "id": "3AP"
+            },
+
+            {
+                "name": "Steering wheel heating",
+                "selected": false,
+                "gfv": 0,
+                "price": 160,
+                "otr": 0,
+                "id": "248"
+            },
+
+            {
+                "name": "Apple CarPlay preparation",
+                "selected": false,
+                "gfv": 0,
+                "price": 235,
+                "otr": 0,
+                "id": "6CP"
+            },
+
+            {
+                "name": "Enhanced Bluetooth w/ USB audio and Voice Control",
+                "selected": false,
+                "gfv": 0,
+                "price": 430,
+                "otr": 0,
+                "id": "6NS"
+            },
+
+            {
+                "name": "Enhanced Bluetooth w/ wireless charging",
+                "selected": false,
+                "gfv": 0,
+                "price": 395,
+                "otr": 0,
+                "id": "6NW"
+            },
+
+            {
+                "name": "Loudspeaker - BMW Advanced",
+                "selected": false,
+                "gfv": 136,
+                "price": 295,
+                "otr": 0,
+                "id": "676"
+            },
+
+            {
+                "name": "Loudspeaker - Harman/Kardon",
+                "selected": false,
+                "gfv": 272,
+                "price": 600,
+                "otr": 0,
+                "id": "674"
+            }
+        ]
+    }
+]

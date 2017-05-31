@@ -1,0 +1,19 @@
+<div class="jumbotron">
+	<h1><strong>Man</strong>Maths</h1>
+	<p>This website is a simple PCP finance calculator designed to help rationalize the purchase of a new BMW M-lite.</p>
+</div>
+
+<h2>Pick your poison...</h2>
+
+<div class="row">
+	<div class="col-lg-6" ng-repeat="vehicle in vehicles">
+		<div class="thumbnail">
+     		<img src="{{vehicle.image}}" alt="{{vehicle.name}}" height="100%" width="100%">
+     		<div class="caption">
+      			<h3>{{vehicle.name}}</h3>
+      			<p>£{{vehicle.price|number}} OTR - from <strong>£{{vehicle.calculateMonthlyRate()|number:0}}</strong>/mo over {{vehicle.term}} months with £{{vehicle.deposit|number}} deposit</p>
+      			<p><a class="btn btn-default" role="button" ui-sref="calculator({id: vehicle.id, spec:''})">Configure &raquo;</a></p>
+      		</div>
+      	</div>
+	</div>
+</div>
