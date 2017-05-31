@@ -2,7 +2,7 @@
     {
         "id": "bmw-m140i",
         "name": "BMW M140i",
-        "image": "/img/BMW-M140i-2018-600.jpg",
+        "image": "img/BMW-M140i-2018-600.jpg",
 
         "price": 31570.00,
         "deposit": 1700,
@@ -313,7 +313,7 @@
     {
         "id": "bmw-m240i",
         "name": "BMW M240i Coupé",
-        "image": "/img/BMW-M240i_Coupe-2018-600.jpg",
+        "image": "img/BMW-M240i_Coupe-2018-600.jpg",
 
         "price": 34835.00,
         "deposit": 3000,
