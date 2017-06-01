@@ -246,6 +246,16 @@
                 "id": "465"
             },
 
+			{
+                "name": "Sun protection glass",
+                "selected": false,
+                "gfv": 0,
+                "price": 290,
+                "otr": 0,
+                "id": "420"
+            },
+
+
             {
                 "name": "Windscreen with grey shade band",
                 "selected": false,
@@ -328,7 +338,7 @@
             {
                 "name": "Sports Automatic",
                 "selected": false,
-                "gfv": 502,
+                "gfv": 517,
                 "price": 1600,
                 "otr": -300,
                 "id": "2TB"
@@ -346,7 +356,7 @@
             {
                 "name": "Professional Media / Navigation Package",
                 "selected": false,
-                "gfv": 136,
+                "gfv": 133,
                 "price": 775,
                 "otr": 0,
                 "id": "ZNP"
@@ -418,7 +428,7 @@
             {
                 "name": "Park Distance Control (PDC), Front and Rear",
                 "selected": false,
-                "gfv": 136,
+                "gfv": 148,
                 "price": 250,
                 "otr": 0,
                 "id": "508"
@@ -427,7 +437,7 @@
             {
                 "name": "Reverse Assist Camera",
                 "selected": false,
-                "gfv": 136,
+                "gfv": 142,
                 "price": 330,
                 "otr": 0,
                 "id": "3AG"
@@ -572,7 +582,7 @@
             {
                 "name": "Loudspeaker - BMW Advanced",
                 "selected": false,
-                "gfv": 136,
+                "gfv": 148,
                 "price": 295,
                 "otr": 0,
                 "id": "676"
@@ -581,7 +591,7 @@
             {
                 "name": "Loudspeaker - Harman/Kardon",
                 "selected": false,
-                "gfv": 272,
+                "gfv": 286,
                 "price": 600,
                 "otr": 0,
                 "id": "674"
