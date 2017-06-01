@@ -85,6 +85,15 @@
             },
 
             {
+                "name": "Cruise control with braking function",
+                "selected": false,
+                "gfv": 0,
+                "price": 360,
+                "otr": 0,
+                "id": "544"
+            },
+
+            {
                 "name": "Driving Assistant",
                 "selected": false,
                 "gfv": 0,
