@@ -37,7 +37,7 @@
                             Monthly Payment
                         </label>
                         <div class="col-sm-8 control-label">
-                            <strong>£{{vehicle.calculateMonthlyRate()|number:2}}</strong>
+                            <strong>£{{vehicle.calculateMonthlyRate()|number:2}} x47</strong>
                         </div>
                     </div>
                     <hr />
@@ -81,7 +81,7 @@
                             Total Price OTR
                         </label>
                         <div class="col-sm-8 control-label">
-                            <strong>£{{vehicle.totalPrice()|number:2}}</strong>
+                            <strong>£{{vehicle.totalPriceOTR()|number:2}}</strong>
                             <div class="help-block">
                                 This is the total amount that you will pay the dealer for the car.
                             </div>
@@ -148,7 +148,7 @@
                             Amount to amortize
                         </label>
                         <div class="col-sm-8">
-                            	£{{vehicle.totalPrice()|number:2}}<br />
+                            	£{{vehicle.totalPriceOTR()|number:2}}<br />
                             	-£{{vehicle.dealerDeposit|number:2}}<br />
                             	-£{{vehicle.deposit|number:2}} <br />
                             	-£{{vehicle.totalGfv()|number:2}}
