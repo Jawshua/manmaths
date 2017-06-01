@@ -11,5 +11,6 @@ angular.module('manMaths')
 
     $scope.reset = function() {
     	$scope.vehicle = angular.copy(vehicle);
+    	$scope.vehicle.calculateExtraMonthlies();
     };
 }]);

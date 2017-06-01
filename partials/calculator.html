@@ -1,6 +1,6 @@
 <span class="pull-right">
 	<a class="btn btn-info" ui-sref="calculator({id: vehicle.id, spec: vehicle.serialize()})"><i class="glyphicon glyphicon-share"></i></a>
-	<a class="btn btn-danger" ui-sref="calculator({id: vehicle.id, spec: ''})"><i class="glyphicon glyphicon-remove"></i></a>
+	<a class="btn btn-danger" ui-sref="calculator({id: vehicle.id, spec: ''})" ng-click="reset()"><i class="glyphicon glyphicon-remove"></i></a>
 </span>
 <h1>{{vehicle.name}}</h1>
 <div class="row clearfix">
