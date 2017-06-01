@@ -76,15 +76,6 @@
             },
 
             {
-                "name": "Adaptive Cruise (Auto Only)",
-                "selected": false,
-                "gfv": 0,
-                "price": 430,
-                "otr": 0,
-                "id": "5DF"
-            },
-
-            {
                 "name": "Adaptive LED Headlights",
                 "selected": false,
                 "gfv": 266,
