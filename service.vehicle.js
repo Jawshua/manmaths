@@ -5,6 +5,13 @@ angular.module('manMaths')
         loadVehicles: {method:'GET', isArray: true}
     });
 
+    function calculateMonthly(amortize, gfv, term, apr) {
+        var termPayment = Maths.PMT((apr / 12) / 100, term - 1, amortize, 0, 0) * -1;
+        var balloonInterest = (gfv * apr) / 100 * (term / 12) / term;
+
+        return (termPayment + balloonInterest).toFixed(2);
+    }
+
     Vehicle.prototype.selectedExtras = function() {
         return $filter('filter')(this.options, {selected: true});
     };
@@ -19,6 +26,18 @@ angular.module('manMaths')
 
         return value;
     };
+
+    Vehicle.prototype.calculateExtraMonthlies = function() {
+        var interest = (this.apr / 12) / 100;
+        var apr = this.apr;
+        var term = this.term;
+
+        angular.forEach(this.options, function(option) {
+            var finance = option.price + option.otr - option.gfv;
+
+            option.monthly = calculateMonthly(finance, option.gfv, term, apr);
+        });
+    }
 
     Vehicle.prototype.totalGfv = function() {
         return this.gfv + this.sumExtras('gfv');
@@ -45,14 +64,7 @@ angular.module('manMaths')
     };
 
     Vehicle.prototype.calculateMonthlyRate = function() {
-        var finance = this.amountToFinance();
-        var balloon = this.totalGfv();
-
-
-        var termPayment = Maths.PMT((this.apr / 12) / 100, this.term - 1, finance, 0, 0) * -1;
-        var balloonInterest = (balloon * this.apr) / 100 * (this.term / 12) / this.term;
-
-        return (termPayment + balloonInterest).toFixed(2);
+        return calculateMonthly(this.amountToFinance(), this.totalGfv(), this.term, this.apr);
     };
 
     Vehicle.prototype.serialize = function() {
