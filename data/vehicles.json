@@ -6,12 +6,15 @@
 
         "price": 31570.00,
         "deposit": 1700,
-        "dealerDeposit": 7400,
+        "dealerDiscount": 4150,
+        "financeContribution": 3250,
+        "discountPercentage": 13.14539,
+        "usePercentage": true,
         "apr": 3.9,
         "term": 48,
         "gfv": 12854,
-
         "otr": 1580,
+
         "options": [
             {
                 "name": "Shadow Edition",
@@ -246,7 +249,7 @@
                 "id": "465"
             },
 
-			{
+            {
                 "name": "Sun protection glass",
                 "selected": false,
                 "gfv": 0,
@@ -327,14 +330,17 @@
 
         "price": 34835.00,
         "deposit": 3000,
-        "dealerDeposit": 7665,
+        "dealerDiscount": 4165,
+        "financeContribution": 3500,
+        "discountPercentage": 12,
+        "usePercentage": true,
         "apr": 3.9,
         "term": 48,
         "gfv": 14788,
 
         "otr": 1580,
 
-		"options": [
+        "options": [
             {
                 "name": "Sports Automatic",
                 "selected": false,

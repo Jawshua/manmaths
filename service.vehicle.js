@@ -31,13 +31,32 @@ angular.module('manMaths')
         var interest = (this.apr / 12) / 100;
         var apr = this.apr;
         var term = this.term;
+        var useDiscount = this.usePercentage;
+        var discount = this.discountPercentage;
 
         angular.forEach(this.options, function(option) {
-            var finance = option.price + option.otr - option.gfv;
+            var price = option.price;
+
+            if (useDiscount) {
+                price = (price / 100) * (100 - discount);
+            }
+
+            var finance = price + option.otr - option.gfv;
 
             option.monthly = calculateMonthly(finance, option.gfv, term, apr);
+
+
         });
     }
+
+    Vehicle.prototype.calculateDiscountFromPercentage = function() {
+        this.dealerDiscount = Number((this.totalPrice() * (this.discountPercentage / 100)).toFixed(2));
+    }
+
+    Vehicle.prototype.calculatePercentageFromDiscount = function() {
+        this.discountPercentage = Number(((this.dealerDiscount / this.totalPrice()) * 100).toFixed(5));
+    }    
+
 
     Vehicle.prototype.totalGfv = function() {
         return this.gfv + this.sumExtras('gfv');
@@ -59,8 +78,21 @@ angular.module('manMaths')
         return this.totalOTR() + this.totalPrice();
     }
 
+    Vehicle.prototype.totalPriceOTR = function () {
+        return this.totalOTR() + this.totalPrice();
+    }
+
+    Vehicle.prototype.totalPriceOTRDiscounted = function () {
+        return this.totalPriceOTR() - this.dealerDiscount - this.financeContribution;
+    }
+
+    Vehicle.prototype.totalDiscountPercentage = function () {
+
+        return (100 - (this.totalPriceOTRDiscounted() / this.totalPriceOTR() * 100)).toFixed(2);
+    }
+
     Vehicle.prototype.amountToFinance = function() {
-        return this.totalPriceOTR() - this.dealerDeposit - this.deposit - this.totalGfv();
+        return this.totalPriceOTRDiscounted() - this.deposit - this.totalGfv();
     };
 
     Vehicle.prototype.calculateMonthlyRate = function() {
@@ -75,7 +107,7 @@ angular.module('manMaths')
             ids.push(extra.id);
         });
 
-        var data = this.deposit + ';' + this.dealerDeposit + ';' + ids.join(',');
+        var data = this.deposit + ';' + this.dealerDiscount + ';' + ids.join(',');
 
         return btoa(data).replace(/=+/,'');
     }
@@ -88,7 +120,7 @@ angular.module('manMaths')
         }
 
         this.deposit = Number(data[0]);
-        this.dealerDeposit = Number(data[1]);
+        this.dealerDiscount = Number(data[1]);
 
         var ids = data[2].split(',');
         angular.forEach(this.options, function(option) {

@@ -4,13 +4,28 @@ angular.module('manMaths')
     $scope.vehicle = angular.copy(vehicle);
     $scope.vehicle.calculateExtraMonthlies();
 
-
     if ($stateParams.spec) {
-    	$scope.vehicle.deserialize($stateParams.spec);
+        $scope.vehicle.deserialize($stateParams.spec);
     }
 
     $scope.reset = function() {
-    	$scope.vehicle = angular.copy(vehicle);
-    	$scope.vehicle.calculateExtraMonthlies();
+        $scope.vehicle = angular.copy(vehicle);
+        $scope.vehicle.calculateExtraMonthlies();
     };
+
+    // Calculate discount amount based on percentage
+    $scope.$watch('vehicle', function(now, old) {
+        if ($scope.vehicle.usePercentage) {
+            $scope.vehicle.calculateDiscountFromPercentage();
+        } else {
+            $scope.vehicle.calculatePercentageFromDiscount();
+        }
+
+        // Recalculate option estimates when percentages change
+        if (now.usePercentage != old.usePercentage) {
+            $scope.vehicle.calculateExtraMonthlies();
+        } else if (now.usePercentage && old.discountPercentage != now.discountPercentage) {
+            $scope.vehicle.calculateExtraMonthlies();
+        }
+    }, true);
 }]);
