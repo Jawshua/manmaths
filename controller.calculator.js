@@ -6,6 +6,7 @@ angular.module('manMaths')
 
     if ($stateParams.spec) {
         $scope.vehicle.deserialize($stateParams.spec);
+        $scope.vehicle.calculateDiscountFromPercentage();
     }
 
     $scope.reset = function() {

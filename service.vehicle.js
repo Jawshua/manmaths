@@ -55,7 +55,7 @@ angular.module('manMaths')
 
     Vehicle.prototype.calculatePercentageFromDiscount = function() {
         this.discountPercentage = Number(((this.dealerDiscount / this.totalPrice()) * 100).toFixed(5));
-    }    
+    }
 
 
     Vehicle.prototype.totalGfv = function() {
@@ -107,7 +107,7 @@ angular.module('manMaths')
             ids.push(extra.id);
         });
 
-        var data = this.deposit + ';' + this.dealerDiscount + ';' + ids.join(',');
+        var data = this.deposit + ';' + this.financeContribution + ';' + this.discountPercentage + ';' + (this.usePercentage ? '1' : '0') + ';' + ids.join(',');
 
         return btoa(data).replace(/=+/,'');
     }
@@ -115,14 +115,16 @@ angular.module('manMaths')
     Vehicle.prototype.deserialize = function(str) {
         var data = atob(str).split(';');
 
-        if (data.length != 3) {
+        if (data.length != 5) {
             return;
         }
 
         this.deposit = Number(data[0]);
-        this.dealerDiscount = Number(data[1]);
+        this.financeContribution = Number(data[1]);
+        this.discountPercentage = Number(data[2]);
+        this.usePercentage = (data[3] === '1')
 
-        var ids = data[2].split(',');
+        var ids = data[4].split(',');
         angular.forEach(this.options, function(option) {
             angular.forEach(ids, function(id) {
                 if (option.id == id) {
