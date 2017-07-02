@@ -166,6 +166,20 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="deposit" class="col-sm-4 control-label">
+                            APR
+                        </label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <input id="deposit" class="form-control" ng-model="vehicle.apr" type="number" />
+                                <span class="input-group-addon">%</span>
+                            </div>
+                            <div class="help-block">
+                                This is the APR associated with the finance deal.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="col-sm-4 control-label">
                             GFV
                         </label>
@@ -175,7 +189,6 @@
                                 This is the optional final payment at the end of the finance term.
                             </div>
                         </div>
-
                     </div>
                     <div class="form-group">
                         <label class="col-sm-4 control-label">
