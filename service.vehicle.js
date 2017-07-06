@@ -49,6 +49,17 @@ angular.module('manMaths')
         });
     }
 
+    Vehicle.prototype.updateMileages = function() {
+        var vehicle = this;
+
+        angular.forEach(this.mileages, function(mileage) {
+            if (mileage.mileage == vehicle.mileage) {
+                vehicle.mileageEstimate = mileage.estimate;
+                vehicle.mileageGfv = mileage.gfv;
+            }
+        })
+    };
+
     Vehicle.prototype.calculateDiscountFromPercentage = function() {
         this.dealerDiscount = Number((this.totalPrice() * (this.discountPercentage / 100)).toFixed(2));
     }
@@ -59,7 +70,7 @@ angular.module('manMaths')
 
 
     Vehicle.prototype.totalGfv = function() {
-        return this.gfv + this.sumExtras('gfv');
+        return this.gfv + this.sumExtras('gfv') + this.mileageGfv;
     };
 
     Vehicle.prototype.totalExtras = function() {

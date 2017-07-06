@@ -28,5 +28,10 @@ angular.module('manMaths')
         } else if (now.usePercentage && old.discountPercentage != now.discountPercentage) {
             $scope.vehicle.calculateExtraMonthlies();
         }
+
+        if (now.mileage != old.mileage) {
+            console.log('haaay');
+            $scope.vehicle.updateMileages();
+        }
     }, true);
 }]);

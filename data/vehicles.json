@@ -15,6 +15,47 @@
         "gfv": 12663,
         "otr": 1580,
 
+        "mileage": 8000,
+        "mileageGfv": 0,
+        "mileageEstimate": false,
+        "mileages": [
+            {
+                "mileage": 8000,
+                "gfv": 0,
+                "estimate": false
+            },
+            {
+                "mileage": 10000,
+                "gfv": -650,
+                "estimate": true
+            },
+            {
+                "mileage": 12000,
+                "gfv": -1300,
+                "estimate": true
+            },
+            {
+                "mileage": 14000,
+                "gfv": -1950,
+                "estimate": true
+            },
+            {
+                "mileage": 16000,
+                "gfv": -2600,
+                "estimate": true
+            },
+            {
+                "mileage": 18000,
+                "gfv": -3250,
+                "estimate": true
+            },
+            {
+                "mileage": 20000,
+                "gfv": -3900,
+                "estimate": true
+            }
+        ],
+
         "options": [
             {
                 "name": "Shadow Edition",
@@ -337,8 +378,18 @@
         "apr": 3.9,
         "term": 48,
         "gfv": 14788,
-
         "otr": 1580,
+
+        "mileage": 8000,
+        "mileageGfv": 0,
+        "mileageEstimate": false,
+        "mileages": [
+            {
+                "mileage": 8000,
+                "gfv": 0,
+                "estimate": false
+            }
+        ],
 
         "options": [
             {
