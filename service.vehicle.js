@@ -68,6 +68,9 @@ angular.module('manMaths')
         this.discountPercentage = Number(((this.dealerDiscount / this.totalPrice()) * 100).toFixed(5));
     }
 
+    Vehicle.prototype.isExpired = function() {
+        return (Date.parse(this.expires) < (new Date()));
+    }
 
     Vehicle.prototype.totalGfv = function() {
         return this.gfv + this.sumExtras('gfv') + this.mileageGfv;
@@ -83,6 +86,10 @@ angular.module('manMaths')
 
     Vehicle.prototype.totalPrice = function() {
         return this.price + this.totalExtras();
+    };
+
+    Vehicle.prototype.totalP11d = function() {
+        return this.p11d + this.totalExtras();
     };
 
     Vehicle.prototype.totalPriceOTR = function () {

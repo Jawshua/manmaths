@@ -5,6 +5,7 @@
         "image": "img/BMW-M140i-2018-600.jpg",
 
         "price": 31570.00,
+        "p11d": 32295.00,
         "deposit": 1000,
         "dealerDiscount": 4010,
         "financeContribution": 2250,
@@ -14,6 +15,8 @@
         "term": 48,
         "gfv": 12663,
         "otr": 1580,
+
+        "expires": "2017-09-30",
 
         "mileage": 8000,
         "mileageGfv": 0,
@@ -370,15 +373,18 @@
         "image": "img/BMW-M240i_Coupe-2018-600.jpg",
 
         "price": 34835.00,
+        "p11d": 35560.00,
         "deposit": 3000,
         "dealerDiscount": 4165,
-        "financeContribution": 3500,
+        "financeContribution": 2500,
         "discountPercentage": 12,
         "usePercentage": true,
-        "apr": 3.9,
+        "apr": 4.9,
         "term": 48,
         "gfv": 14788,
         "otr": 1580,
+
+        "expires": "2017-09-30",
 
         "mileage": 8000,
         "mileageGfv": 0,

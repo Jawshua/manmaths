@@ -61,15 +61,12 @@
                             £{{vehicle.totalExtras()|number:2}}
                         </div>
                     </div>
-                    <div class="form-group" ng-class="{'has-error': vehicle.totalPrice() > 40000}">
+                    <div class="form-group">
                         <label for="total" class="col-sm-4 control-label">
                             Total
                         </label>
                         <div class="col-sm-8 control-label">
                             £{{vehicle.totalPrice()|number:2}}
-                            <div class="help-block">
-                                If this is higher than £40,000 then annual road tax increases from £140 to £450.
-                            </div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -108,6 +105,17 @@
                         </div>
                     </div>
 
+                    <div class="form-group" ng-class="{'has-error': vehicle.totalP11d() > 40000}">
+                        <label for="total" class="col-sm-4 control-label">
+                            P11d Value
+                        </label>
+                        <div class="col-sm-8 control-label">
+                            £{{vehicle.totalP11d()|number:2}}
+                            <div class="help-block">
+                                If this is higher than £40,000 then annual road tax increases from £140 to £450.
+                            </div>
+                        </div>
+                    </div>
 
                     <hr />
 
@@ -221,6 +229,18 @@
                                 -£{{vehicle.deposit|number:2}} <br />
                                 -£{{vehicle.totalGfv()|number:2}}<br />
                                 = <strong>£{{vehicle.amountToFinance()|number:2}}</strong>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">
+                            Deal expires
+                        </label>
+                        <div class="col-sm-8" ng-class="{'has-warning': vehicle.isExpired()}">
+                            {{vehicle.expires}}
+                            <div class="help-block" ng-if="vehicle.isExpired()">
+                                This deal is out of date. The default finance information is likely incorrect.
+                            </div>
                         </div>
                     </div>
                 </form>
