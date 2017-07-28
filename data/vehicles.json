@@ -374,14 +374,14 @@
 
         "price": 34835.00,
         "p11d": 35560.00,
-        "deposit": 3000,
+        "deposit": 2000,
         "dealerDiscount": 4165,
         "financeContribution": 2500,
-        "discountPercentage": 12,
+        "discountPercentage": 13.2,
         "usePercentage": true,
         "apr": 4.9,
         "term": 48,
-        "gfv": 14788,
+        "gfv": 14971,
         "otr": 1580,
 
         "expires": "2017-09-30",
