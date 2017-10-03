@@ -7,16 +7,16 @@
         "price": 31570.00,
         "p11d": 32295.00,
         "deposit": 1000,
-        "dealerDiscount": 4010,
+        "dealerDiscount": 4250,
         "financeContribution": 2250,
-        "discountPercentage": 12.87,
+        "discountPercentage": 13.46,
         "usePercentage": true,
         "apr": 4.9,
         "term": 48,
-        "gfv": 12663,
+        "gfv": 12474,
         "otr": 1580,
 
-        "expires": "2017-09-30",
+        "expires": "2017-12-30",
 
         "mileage": 8000,
         "mileageGfv": 0,
@@ -63,7 +63,7 @@
             {
                 "name": "Shadow Edition",
                 "selected": false,
-                "gfv": 2650,
+                "gfv": 2651,
                 "price": 1335,
                 "otr": 0,
                 "id": "shadow"
@@ -374,17 +374,17 @@
 
         "price": 34835.00,
         "p11d": 35560.00,
-        "deposit": 2000,
-        "dealerDiscount": 4165,
-        "financeContribution": 2500,
-        "discountPercentage": 13.2,
+        "deposit": 1000,
+        "dealerDiscount": 4440,
+        "financeContribution": 3000,
+        "discountPercentage": 12.74,
         "usePercentage": true,
-        "apr": 4.9,
+        "apr": 3.9,
         "term": 48,
-        "gfv": 14971,
+        "gfv": 14858,
         "otr": 1580,
 
-        "expires": "2017-09-30",
+        "expires": "2017-12-30",
 
         "mileage": 8000,
         "mileageGfv": 0,
@@ -419,7 +419,7 @@
             {
                 "name": "Professional Media / Navigation Package",
                 "selected": false,
-                "gfv": 133,
+                "gfv": 0,
                 "price": 775,
                 "otr": 0,
                 "id": "ZNP"
@@ -446,7 +446,7 @@
             {
                 "name": "Adaptive LED Headlights",
                 "selected": false,
-                "gfv": 266,
+                "gfv": 236,
                 "price": 795,
                 "otr": 0,
                 "id": "552"
@@ -455,7 +455,7 @@
             {
                 "name": "Cruise control with braking function",
                 "selected": false,
-                "gfv": 266,
+                "gfv": 0,
                 "price": 360,
                 "otr": 0,
                 "id": "544"
@@ -536,7 +536,7 @@
             {
                 "name": "Heated front seats",
                 "selected": false,
-                "gfv": 136,
+                "gfv": 0,
                 "price": 295,
                 "otr": 0,
                 "id": "494"
@@ -654,7 +654,7 @@
             {
                 "name": "Loudspeaker - Harman/Kardon",
                 "selected": false,
-                "gfv": 286,
+                "gfv": 236,
                 "price": 600,
                 "otr": 0,
                 "id": "674"
