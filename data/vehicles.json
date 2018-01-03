@@ -13,10 +13,10 @@
         "usePercentage": true,
         "apr": 4.9,
         "term": 48,
-        "gfv": 12474,
+        "gfv": 12274,
         "otr": 1580,
 
-        "expires": "2017-12-30",
+        "expires": "2018-03-31",
 
         "mileage": 8000,
         "mileageGfv": 0,
@@ -381,10 +381,10 @@
         "usePercentage": true,
         "apr": 3.9,
         "term": 48,
-        "gfv": 14858,
+        "gfv": 14579,
         "otr": 1580,
 
-        "expires": "2017-12-30",
+        "expires": "2017-03-31",
 
         "mileage": 8000,
         "mileageGfv": 0,
