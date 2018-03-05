@@ -2,14 +2,15 @@
     {
         "id": "bmw-m140i",
         "name": "BMW M140i",
+        "headline": "BMW M140i Shadow Edition",
         "image": "img/BMW-M140i-2018-600.jpg",
 
-        "price": 31570.00,
-        "p11d": 32295.00,
+        "price": 32340.00,
+        "p11d": 33120.00,
         "deposit": 1000,
-        "dealerDiscount": 4250,
+        "dealerDiscount": 4210,
         "financeContribution": 2250,
-        "discountPercentage": 13.46,
+        "discountPercentage": 12.5,
         "usePercentage": true,
         "apr": 4.9,
         "term": 48,
@@ -62,7 +63,7 @@
         "options": [
             {
                 "name": "Shadow Edition",
-                "selected": false,
+                "selected": true,
                 "gfv": 2651,
                 "price": 1335,
                 "otr": 0,
@@ -81,7 +82,7 @@
                 "name": "5-Door",
                 "selected": false,
                 "gfv": 351,
-                "price": 530,
+                "price": 550,
                 "otr": 0,
                 "id": "5dr"
             },
@@ -99,9 +100,18 @@
                 "name": "Metallic Paint",
                 "selected": false,
                 "gfv": 0,
-                "price": 550,
+                "price": 560,
                 "otr": 0,
                 "id": "met"
+            },
+
+            {
+                "name": "Fineline wood interior",
+                "selected": false,
+                "gfv": 0,
+                "price": 85,
+                "otr": 0,
+                "id": "fsw"
             },
 
             {
@@ -135,7 +145,7 @@
                 "name": "Cruise control with braking function",
                 "selected": false,
                 "gfv": 0,
-                "price": 360,
+                "price": 400,
                 "otr": 0,
                 "id": "544"
             },
@@ -189,7 +199,7 @@
                 "name": "Park Distance Control (PDC), Rear",
                 "selected": false,
                 "gfv": 0,
-                "price": 360,
+                "price": 400,
                 "otr": 0,
                 "id": "507"
             },
@@ -234,7 +244,7 @@
                 "name": "Heated front seats",
                 "selected": false,
                 "gfv": 136,
-                "price": 295,
+                "price": 315,
                 "otr": 0,
                 "id": "494"
             },
@@ -372,12 +382,12 @@
         "name": "BMW M240i Coupé",
         "image": "img/BMW-M240i_Coupe-2018-600.jpg",
 
-        "price": 34835.00,
-        "p11d": 35560.00,
+        "price": 35775.00,
+        "p11d": 36555.00,
         "deposit": 1000,
-        "dealerDiscount": 4440,
+        "dealerDiscount": 4460,
         "financeContribution": 3000,
-        "discountPercentage": 12.74,
+        "discountPercentage": 12.5,
         "usePercentage": true,
         "apr": 3.9,
         "term": 48,
@@ -411,7 +421,7 @@
                 "name": "Metallic Paint",
                 "selected": false,
                 "gfv": 0,
-                "price": 550,
+                "price": 560,
                 "otr": 0,
                 "id": "met"
             },
@@ -435,7 +445,43 @@
             },
 
             {
-                "name": "Adaptive Cruise (Auto Only)",
+                "name": "M Double-spoke style 719 M light-alloy wheels in Jet Black",
+                "selected": false,
+                "gfv": 0,
+                "price": 175,
+                "otr": 0,
+                "id": "WHL"
+            },
+
+            {
+                "name": "M Double-spoke style 436M light-alloy wheels in Orbit Grey",
+                "selected": false,
+                "gfv": 0,
+                "price": 175,
+                "otr": 0,
+                "id": "WHL2"
+            },
+
+            {
+                "name": "Fineline wood interior",
+                "selected": false,
+                "gfv": 0,
+                "price": 85,
+                "otr": 0,
+                "id": "fsw"
+            },
+
+            {
+                "name": "Concierge Service",
+                "selected": false,
+                "gfv": 0,
+                "price": 240,
+                "otr": 0,
+                "id": "CON"
+            },
+
+            {
+                "name": "Active Cruise with Stop and Go (Auto Only)",
                 "selected": false,
                 "gfv": 0,
                 "price": 790,
@@ -447,16 +493,26 @@
                 "name": "Adaptive LED Headlights",
                 "selected": false,
                 "gfv": 236,
-                "price": 795,
+                "price": 790,
                 "otr": 0,
                 "id": "552"
             },
 
             {
+                "name": "High-beam Assistant",
+                "selected": false,
+                "gfv": 0,
+                "price": 150,
+                "otr": 0,
+                "id": "5AC"
+            },
+
+
+            {
                 "name": "Cruise control with braking function",
                 "selected": false,
                 "gfv": 0,
-                "price": 360,
+                "price": 400,
                 "otr": 0,
                 "id": "544"
             },
@@ -492,7 +548,7 @@
                 "name": "Park Distance Control (PDC), Front and Rear",
                 "selected": false,
                 "gfv": 148,
-                "price": 250,
+                "price": 295,
                 "otr": 0,
                 "id": "508"
             },
@@ -525,6 +581,15 @@
             },
 
             {
+                "name": "M seat belts",
+                "selected": false,
+                "gfv": 0,
+                "price": 260,
+                "otr": 0,
+                "id": "MSB"
+            },
+
+            {
                 "name": "Electric Front Seats",
                 "selected": false,
                 "gfv": 0,
@@ -537,9 +602,18 @@
                 "name": "Heated front seats",
                 "selected": false,
                 "gfv": 0,
-                "price": 295,
+                "price": 315,
                 "otr": 0,
                 "id": "494"
+            },
+
+            {
+                "name": "Split-folding rear seats",
+                "selected": false,
+                "gfv": 0,
+                "price": 175,
+                "otr": 0,
+                "id": "srs"
             },
 
             {
@@ -591,7 +665,7 @@
                 "name": "Sun protection glass",
                 "selected": false,
                 "gfv": 0,
-                "price": 290,
+                "price": 300,
                 "otr": 0,
                 "id": "420"
             },
