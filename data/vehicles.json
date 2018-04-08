@@ -1,23 +1,23 @@
 [
     {
         "id": "bmw-m140i",
-        "name": "BMW M140i",
+        "name": "BMW M140i Shadow Edition",
         "headline": "BMW M140i Shadow Edition",
         "image": "img/BMW-M140i-2018-600.jpg",
 
-        "price": 32340.00,
-        "p11d": 33120.00,
+        "price": 34225.00,
+        "p11d": 34955.00,
         "deposit": 1000,
-        "dealerDiscount": 4210,
+        "dealerDiscount": 4545,
         "financeContribution": 2250,
-        "discountPercentage": 12.5,
+        "discountPercentage": 13.5,
         "usePercentage": true,
         "apr": 4.9,
         "term": 48,
-        "gfv": 12274,
-        "otr": 1580,
+        "gfv": 23868,
+        "otr": 1585,
 
-        "expires": "2018-03-31",
+        "expires": "2018-06-30",
 
         "mileage": 8000,
         "mileageGfv": 0,
@@ -62,18 +62,10 @@
 
         "options": [
             {
-                "name": "Shadow Edition",
-                "selected": true,
-                "gfv": 2651,
-                "price": 1335,
-                "otr": 0,
-                "id": "shadow"
-            },
-            {
-                "name": "Shadow Edition Front Parking Sensors",
+                "name": "Front Parking Sensors",
                 "selected": false,
-                "gfv": 0,
-                "price": 250,
+                "gfv": 132,
+                "price": 295,
                 "otr": 0,
                 "id": "508s"
             },
@@ -81,16 +73,25 @@
             {
                 "name": "5-Door",
                 "selected": false,
-                "gfv": 351,
+                "gfv": 350,
                 "price": 550,
                 "otr": 0,
                 "id": "5dr"
             },
 
             {
-                "name": "Sports Automatic",
+                "name": "Sports Automatic (3-door)",
                 "selected": false,
-                "gfv": 502,
+                "gfv": 626,
+                "price": 1600,
+                "otr": -300,
+                "id": "2TB"
+            },
+
+            {
+                "name": "Sports Automatic (5-door)",
+                "selected": false,
+                "gfv": 1354,
                 "price": 1600,
                 "otr": -300,
                 "id": "2TB"
@@ -117,7 +118,7 @@
             {
                 "name": "Professional Media / Navigation Package",
                 "selected": false,
-                "gfv": 136,
+                "gfv": 132,
                 "price": 775,
                 "otr": 0,
                 "id": "ZNP"
@@ -126,7 +127,7 @@
             {
                 "name": "Adaptive M Sport suspension",
                 "selected": false,
-                "gfv": 0,
+                "gfv": 132,
                 "price": 515,
                 "otr": 0,
                 "id": "2VF"
@@ -135,7 +136,7 @@
             {
                 "name": "Adaptive LED Headlights",
                 "selected": false,
-                "gfv": 266,
+                "gfv": 264,
                 "price": 495,
                 "otr": 0,
                 "id": "552"
@@ -187,27 +188,9 @@
             },
 
             {
-                "name": "Park Distance Control (PDC), Front and Rear",
-                "selected": false,
-                "gfv": 136,
-                "price": 595,
-                "otr": 0,
-                "id": "508"
-            },
-
-            {
-                "name": "Park Distance Control (PDC), Rear",
-                "selected": false,
-                "gfv": 0,
-                "price": 400,
-                "otr": 0,
-                "id": "507"
-            },
-
-            {
                 "name": "Reverse Assist Camera",
                 "selected": false,
-                "gfv": 136,
+                "gfv": 132,
                 "price": 330,
                 "otr": 0,
                 "id": "3AG"
@@ -270,7 +253,7 @@
             {
                 "name": "Glass Sunroof",
                 "selected": false,
-                "gfv": 266,
+                "gfv": 132,
                 "price": 895,
                 "otr": 0,
                 "id": "403"
@@ -352,7 +335,7 @@
             {
                 "name": "Enhanced Bluetooth w/ wireless charging",
                 "selected": false,
-                "gfv": 0,
+                "gfv": 132,
                 "price": 395,
                 "otr": 0,
                 "id": "6NW"
@@ -383,18 +366,18 @@
         "image": "img/BMW-M240i_Coupe-2018-600.jpg",
 
         "price": 35775.00,
-        "p11d": 36555.00,
+        "p11d": 36505.00,
         "deposit": 1000,
-        "dealerDiscount": 4460,
+        "dealerDiscount": 4840,
         "financeContribution": 3000,
-        "discountPercentage": 12.5,
+        "discountPercentage": 13.4,
         "usePercentage": true,
         "apr": 3.9,
         "term": 48,
-        "gfv": 14579,
-        "otr": 1580,
+        "gfv": 13958,
+        "otr": 1585,
 
-        "expires": "2017-03-31",
+        "expires": "2017-06-30",
 
         "mileage": 8000,
         "mileageGfv": 0,
@@ -411,7 +394,7 @@
             {
                 "name": "Sports Automatic",
                 "selected": false,
-                "gfv": 517,
+                "gfv": 503,
                 "price": 1600,
                 "otr": -300,
                 "id": "2TB"
@@ -429,7 +412,7 @@
             {
                 "name": "Professional Media / Navigation Package",
                 "selected": false,
-                "gfv": 0,
+                "gfv": 145,
                 "price": 775,
                 "otr": 0,
                 "id": "ZNP"
@@ -438,7 +421,7 @@
             {
                 "name": "Adaptive M Sport suspension",
                 "selected": false,
-                "gfv": 0,
+                "gfv": 145,
                 "price": 515,
                 "otr": 0,
                 "id": "2VF"
@@ -556,7 +539,7 @@
             {
                 "name": "Reverse Assist Camera",
                 "selected": false,
-                "gfv": 142,
+                "gfv": 145,
                 "price": 330,
                 "otr": 0,
                 "id": "3AG"
@@ -601,7 +584,7 @@
             {
                 "name": "Heated front seats",
                 "selected": false,
-                "gfv": 0,
+                "gfv": 145,
                 "price": 315,
                 "otr": 0,
                 "id": "494"
@@ -637,7 +620,7 @@
             {
                 "name": "Glass Sunroof",
                 "selected": false,
-                "gfv": 266,
+                "gfv": 145,
                 "price": 895,
                 "otr": 0,
                 "id": "403"
@@ -719,7 +702,7 @@
             {
                 "name": "Loudspeaker - BMW Advanced",
                 "selected": false,
-                "gfv": 148,
+                "gfv": 145,
                 "price": 295,
                 "otr": 0,
                 "id": "676"
@@ -728,7 +711,7 @@
             {
                 "name": "Loudspeaker - Harman/Kardon",
                 "selected": false,
-                "gfv": 236,
+                "gfv": 290,
                 "price": 600,
                 "otr": 0,
                 "id": "674"
