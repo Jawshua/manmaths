@@ -370,7 +370,7 @@
         "deposit": 1000,
         "dealerDiscount": 4840,
         "financeContribution": 3000,
-        "discountPercentage": 13.4,
+        "discountPercentage": 13.5,
         "usePercentage": true,
         "apr": 3.9,
         "term": 48,
