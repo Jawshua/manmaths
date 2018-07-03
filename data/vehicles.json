@@ -5,19 +5,19 @@
         "headline": "BMW M140i Shadow Edition",
         "image": "img/BMW-M140i-2018-600.jpg",
 
-        "price": 33675.00,
-        "p11d": 34405.00,
-        "deposit": 1000,
-        "dealerDiscount": 4545,
-        "financeContribution": 2250,
-        "discountPercentage": 13.5,
+        "price": 35275.00,
+        "p11d": 36005.00,
+        "deposit": 1500,
+        "dealerDiscount": 4390,
+        "financeContribution": 4000,
+        "discountPercentage": 12.5,
         "usePercentage": true,
         "apr": 4.9,
         "term": 48,
-        "gfv": 12868,
-        "otr": 1585,
+        "gfv": 13513.33,
+        "otr": 1615,
 
-        "expires": "2018-06-30",
+        "expires": "2018-09-30",
 
         "mileage": 8000,
         "mileageGfv": 0,
@@ -73,28 +73,10 @@
             {
                 "name": "5-Door",
                 "selected": false,
-                "gfv": 350,
+                "gfv": 360,
                 "price": 550,
                 "otr": 0,
                 "id": "5dr"
-            },
-
-            {
-                "name": "Sports Automatic (3-door)",
-                "selected": false,
-                "gfv": 626,
-                "price": 1600,
-                "otr": -300,
-                "id": "2TB"
-            },
-
-            {
-                "name": "Sports Automatic (5-door)",
-                "selected": false,
-                "gfv": 1354,
-                "price": 1600,
-                "otr": -300,
-                "id": "2TB"
             },
 
             {
@@ -365,19 +347,19 @@
         "name": "BMW M240i Coupé",
         "image": "img/BMW-M240i_Coupe-2018-600.jpg",
 
-        "price": 35775.00,
-        "p11d": 36505.00,
-        "deposit": 1000,
-        "dealerDiscount": 4840,
+        "price": 37375.00,
+        "p11d": 38105.00,
+        "deposit": 1500,
+        "dealerDiscount": 4990,
         "financeContribution": 3000,
-        "discountPercentage": 13.5,
+        "discountPercentage": 13.35,
         "usePercentage": true,
         "apr": 3.9,
         "term": 48,
-        "gfv": 13958,
-        "otr": 1585,
+        "gfv": 14129,
+        "otr": 1615,
 
-        "expires": "2017-06-30",
+        "expires": "2017-09-30",
 
         "mileage": 8000,
         "mileageGfv": 0,
@@ -391,15 +373,6 @@
         ],
 
         "options": [
-            {
-                "name": "Sports Automatic",
-                "selected": false,
-                "gfv": 503,
-                "price": 1600,
-                "otr": -300,
-                "id": "2TB"
-            },
-
             {
                 "name": "Metallic Paint",
                 "selected": false,
